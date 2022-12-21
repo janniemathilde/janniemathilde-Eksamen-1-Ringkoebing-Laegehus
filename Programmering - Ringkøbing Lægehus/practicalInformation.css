@@ -1,0 +1,39 @@
+/* definerer skriftstørrelse, farve og placering på overskriften "private ydelser" */
+.subtitle-information {
+    font-size: 20px;
+    color: rgb(116, 147, 196);
+    padding-left: 37px;
+    font-weight: 700;
+}
+
+/* gør at attester og vacciner - voksne kan stå ved siden af hinanden. De er placeret i en div sammen */
+.information-parent-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+/* gør at alle diver på siden har en padding-left på 37px */
+.information-parent-flex div{
+    padding-left: 37px;
+}
+
+/* sørger for at vacciner - voksne er placeret hvor den er ift. attester */
+.vaccines {
+    padding-left: 20vw;
+}
+
+/* angiver alle h3'ers skriftstørrelse, farve, placering  */
+.subtitle {
+    font-size: 20px;
+    color: rgb(116, 147, 196);
+    padding-left: 37px;
+    /* angiver hvor bold overskriften skal være */
+    font-weight: 700;
+}
+
+/* definerer hvor informationerne om vacciner - børn + alt brødtekst om afbud, prøvesvar osv. er placeret */
+.body-text-information {
+    padding-left: 37px;
+    padding-bottom: 25px;
+}
+

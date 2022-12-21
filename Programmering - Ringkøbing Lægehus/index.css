@@ -1,0 +1,59 @@
+/* billedet på forsiden */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Images/heroimage.jpg");
+    width: 100%;
+    height: 58%;
+    /* centrere og positionere billedet, så det scalere pænt på alle skærme */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/* velkommen til klinikken */
+.hero-text {
+    text-align: center;
+    position: absolute; 
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(245, 245, 245);
+    font-size:290%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* diven der er placeret omkring både "ny ansættelse" og "ferie" */
+.article-row-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 110px;
+}
+
+/* diven om hver element - ny ansættelse og ferie */
+.article-column {
+    margin: 3%;
+}
+
+/* aktuelt overskrift */
+.article-layout {
+    display: flex;
+    flex-direction: column;  
+}
+
+/* definere datoen ved "ny ansættelse" og "ferie" */
+.date {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    color: grey;
+    font-weight: bold;
+}
+
+/* her defineres overskriften i "ny ansættelse" og "ferie" */
+.body-text {
+    margin-block-start: 0.3em;
+    margin-block-end: 0em;
+    color: rgb(22, 63, 108);
+    font-weight: bold;
+    font-size: 2.3vw;
+}

@@ -1,0 +1,38 @@
+/* angiver tekststørrelse, farve og placering for h3 overskriften "klinikken" */
+.subtitle-contact {
+    font-size: 20px;
+    color: rgb(116, 147, 196);
+    padding-left: 37px;
+    font-weight: 700;
+}
+
+/* gør at alle informationer står på vertikal linje med overskriften "klinikken" */
+.body-text-contact {
+    padding-left: 37px;
+}
+
+/* gør at alle h4 tags inde i outer-body class får en padding på 37px fra venstre */
+.outer-body h4 {
+    padding-left: 37px; 
+}
+
+/* giver luft mellem lægevagtens nummer og footeren. */
+.body-text-doctorscall {
+    padding-bottom: 100px;
+}
+
+/* definerer størrelse og placering på billedet */
+.image {
+   height: 500px;
+   width: 600px;
+   padding-right: 70px;
+   padding-top: 230px;
+   padding-left: 260px;
+}
+
+/* gør at billedet kan være ved siden af teksten vha. flex og flex-direction */
+.contact-parent-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

@@ -1,0 +1,38 @@
+/* gør at alle billeder + tekst kan stå ved siden af hinanden vha. flex og flex-direction */
+.article-row-parent-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* giver luft mellem lægernes info og overskriften "personale" */
+    padding-bottom: 110px;
+}
+
+/* alle div omkring hvert enkelt billede + information om læger og personale */
+.article-column-about {
+    margin: 3%;
+    width: 300px;
+}
+
+/* angiver tekststørrelse, farve og placering på overskrifterne "læger" og "personale" */
+.subtitle {
+    font-size: 30px;
+    color: rgb(116, 147, 196);
+    padding-left: 37px;
+    /* angiver hvor bold skriften skal være */
+    font-weight: 700;
+}
+
+/* angiver tekststørrelse, farve og tykkelse på lægernes og personalets navne */
+.profile-name {
+    font-size: 20px;
+    color: rgb(116, 147, 196);
+    /* Bestemmer hvor bold teksten skal være */
+    font-weight: 565;
+}
+
+/* angiver linjeafstand og tekststørrelse på brødteksten om lægerne og personalet. */
+.profile-text {
+    line-height: 4px;
+    font-size: 18px;
+}
+

@@ -1,0 +1,77 @@
+/* diven om skemaet og knappefunktionen. Gør at det kan stå ved siden af hinanden vha. flex */
+.opening-hours-parent {
+    display: flex;
+    /* definerer at elementerne skal være placeret ved siden af hinanden. */
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 7vw;
+    padding-top: 2vw;
+    padding-left: 9vw;
+}
+
+/* den ydre kant på skemaet - angiver tykkelse og farve */
+.table-border {
+    border: 1px solid #a4a4a4;
+}
+
+/* definerer noget om skemaet og dataen inde i skemaet */
+table, td {
+    border-collapse: collapse;
+    /* definerer tykkelse og farve på linjerne mellem dataene */
+    border-bottom: 1px solid #a4a4a4;
+    border-top: 1px solid #a4a4a4;
+    /* angiver hvor meget luft der skal være rundt om dataene */
+    padding: 1.5vw;
+    font-size: 2vw;
+  }
+/* definerer noget om overskrifterne i skemaet - konsultation og telefontider */
+th {
+    /* luft omkring overskrifterne */
+    padding: 10px;
+    color: #4c4c4c;
+  }
+
+/* diven omkring knappen, teksten og stregerne omkring knappen */
+.button-right {
+   /* for at få hele elementet til at være placeret hvor det er */
+    padding-right: 9vw;
+    padding-top: 5vw;
+    height: 19vw;
+    display: flex;
+    /* gør at elementerne kan være placeret over hinanden i stedet for ved siden af hinanden */
+    flex-direction: column;
+    /* for at få knappen og teksten til at stå i midten af linjerne */
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+
+/* viser hvor lang stregen omkring knappen skal være */
+.button-line {
+    width: 20vw;
+}
+
+/* stylingen af knappen */
+.button-opening-hours {
+    color: white;
+    /* hvor meget elementet runder i hjørnerne */
+    border-radius: 5px;
+    width: 160px;
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;   
+}
+
+.subtitle  {
+    font-size: 30px;
+    color: rgb(116, 147, 196);
+    padding-left: 37px;
+    /* angiver hvor bold skriften skal være */
+    font-weight: 700;
+}
+
+.body-text-information {
+    padding-left: 37px;
+    padding-bottom: 10px;
+}

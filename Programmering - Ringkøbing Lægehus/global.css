@@ -1,0 +1,156 @@
+/* farven på nav og footeren */
+.maincolor {
+    background-color: rgb(116, 147, 196);
+}
+
+/* her defineres højden på nav */
+.navmenu {
+    height: 65px;
+}
+
+/* placering og navigation af logoet */
+.logo img {
+    width: 89px;
+    height: 53px;
+    padding-left: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* gør at logo og menupunkterne kan stå på linje med mellemrum mellem dem */
+.parent {
+    display: flex; 
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+/* viser hvor de 4 navigationslinks bliver placeret i nav. */
+.menu-container-div {
+    width: 40%;
+}
+
+/* her bestemmes navigationslinks' placering og størrelse i nav */
+.menu-container {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    padding-right: 20px;
+    padding-top: 3px;
+    font-size: 17px;
+    white-space: nowrap;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+/* her er brugt flexbox for at centrere knapperne. man placere den midterste og ud fra den, placeres de tre andre.
+flex betyder at elementerne vil blive formindsket til den plads der er givet */
+.menu-item {
+    flex-basis: 25%;
+    text-align: center;
+    transition: 0.3s;
+}
+/* animation - når man hover over menupunkterne, bliver de mørkeblå */
+.menu-item :hover {
+    /* color: rgb(136, 186, 238);  */
+    color: rgb(22, 63, 108);
+    font-size: 18px;
+}
+
+/* dette er ikke en class, men gælder på hele body tagget på alle dokumenter. 
+margin og padding fjernes når man sætter margin og padding til 0 */
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* dette er heller ikke en class - bestemmer tekstens placering og farve i footeren */
+footer{
+    margin-top: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+/* alle links på alle 4 sider får farven hvid */
+a {
+    color:rgb(255, 252, 252);
+    text-decoration: none;
+}
+
+/* når man hover over links skifter cursoren til en hånd */
+a :hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* der hvor alt indhold på siden er. gør at indholdet fylder hele skærmen */
+body, html {
+    height: 100%;
+}
+
+/* selvbetjeningsknappen og find os. */
+.mainbutton {
+    color: white;
+    /* definerer hvor rund knappen er i hjørnerne */
+    border-radius: 5px;
+    width: 155px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 19px;
+}
+
+/*Find os knap på forsiden*/
+.button-left {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* gør at der er luft mellem kanten og indholdet på siden (1% i kanterne og 2% foroven og forneden */
+.outer-body {
+    margin: 1% 2%;
+}
+
+/* alle h2 tags får samme tekststørrelse og farve på alle sider */
+h2 {
+    font-size: 4vw;
+    color: rgb(22, 63, 108);
+}
+
+/* diven om hele footeren */
+.footer-flexbox-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+/* hver enkel overskrift og indhold er placeret i hver deres .footer-child */
+.footer-child {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 200px;
+    font-size: 15px;
+}
+
+/* angiver linjeafstand i footeren */
+.line-height {
+    line-height: 30px;
+}
+
+/* Extra small devices (phones, 600px and down)*/
+@media only screen and (max-width: 600px) {
+    .hero-text h1 {
+        font-size: 95%;
+    }
+}
